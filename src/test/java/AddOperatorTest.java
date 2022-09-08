@@ -18,7 +18,7 @@ public class AddOperatorTest extends BaseTest {
 
     @Test (dataProvider = "DataPositiveNumbers")
     public void testTC11AddPositiveNumbers(String num1, String num2, String expectedResult) {
-        String addSmoke = new CalculatorPage(getDriver())
+        String addPositiveNumbers = new CalculatorPage(getDriver())
                 .clickBuildDropDownMenu()
                 .clickBuildEight()
                 .setNumber1Field(num1)
@@ -27,7 +27,7 @@ public class AddOperatorTest extends BaseTest {
                 .clickCalculateButton()
                 .getNumberAnswerField();
 
-        Assert.assertEquals(addSmoke, expectedResult);
+        Assert.assertEquals(addPositiveNumbers, expectedResult);
     }
 
     @DataProvider(name = "ErrorMessageData")
