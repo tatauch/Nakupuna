@@ -19,7 +19,7 @@ public class MultiplyOperatorTest extends BaseTest {
 
     @Test(dataProvider = "DataPositiveNumbers")
     public void testTC354MultiplyPositiveNumbers(String num1, String num2, String expectedResult) {
-        String multiplySmoke = new CalculatorPage(getDriver())
+        String multiplyPositiveNumbers = new CalculatorPage(getDriver())
                 .clickBuildDropDownMenu()
                 .clickBuildEight()
                 .setNumber1Field(num1)
@@ -28,6 +28,6 @@ public class MultiplyOperatorTest extends BaseTest {
                 .clickCalculateButton()
                 .getNumberAnswerField();
 
-        Assert.assertEquals(multiplySmoke, expectedResult);
+        Assert.assertEquals(multiplyPositiveNumbers, expectedResult);
     }
 }
