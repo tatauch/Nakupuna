@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class MultiplyTest extends BaseTest {
+public class MultiplyOperatorTest extends BaseTest {
 
     @DataProvider(name = "DataPositiveNumbers")
     public Object[][] dataPositiveNumbers() {
